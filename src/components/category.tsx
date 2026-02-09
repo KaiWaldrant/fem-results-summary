@@ -1,7 +1,5 @@
 interface CategoryProps {
-  icon: string;
-  category: string;
-  score: number;
+  data: { icon: string; category: string; score: number };
 }
 
 const catColor = {
@@ -11,7 +9,7 @@ const catColor = {
   Visual: "color-blue-",
 };
 
-export default function Category(data: CategoryProps) {
+export default function Category({ data }: CategoryProps) {
   return (
     <div
       key={data.category}
