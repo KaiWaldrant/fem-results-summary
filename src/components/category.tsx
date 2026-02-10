@@ -1,6 +1,8 @@
-interface CategoryProps {
-  data: { icon: string; category: string; score: number };
-}
+import type { JsonProps } from "../types/json";
+
+export type CategoryProps = {
+  data: JsonProps;
+};
 
 const catColor = {
   Reaction: "color-red-",

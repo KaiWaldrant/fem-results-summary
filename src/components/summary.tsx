@@ -1,8 +1,9 @@
 import Category from "./category";
 import Button from "./button";
+import type { JsonProps } from "../types/json";
 
 interface SummaryProps {
-  data: [];
+  data: JsonProps[];
 }
 
 export default function Summary({ data }: SummaryProps) {
