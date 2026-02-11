@@ -14,10 +14,12 @@ export default function ResultsCard({ data }: ResultsCardsProps) {
       <div className="results-card__content">
         <h2 className="results-card__title">Your Results</h2>
         <ResultBadge result={Math.round(averageScore)} />
-        <p className="results-card__score">Great</p>
-        <p className="results-card__description">
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
+        <div className="results-card__description">
+          <p className="results-card__score">Great</p>
+          <p className="results-card__text">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
       </div>
     </div>
   );
