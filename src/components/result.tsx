@@ -1,5 +1,5 @@
 import Summary from "./summary";
-// import ResultsCard from "./results-card";
+import ResultsCard from "./results-card";
 import type { JsonProps } from "../types/json";
 
 interface ResultProps {
@@ -9,7 +9,7 @@ interface ResultProps {
 export default function Result({ data }: ResultProps) {
   return (
     <div className="result">
-      {/*<ResultsCard />*/}
+      <ResultsCard data={data} />
       <Summary data={data} />
     </div>
   );

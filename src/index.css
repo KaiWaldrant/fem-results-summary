@@ -17,10 +17,14 @@
 
 body {
   min-height: 100mvh;
-  align-content: center;
-  justify-content: center;
 }
 
 main {
   margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  body {
+    align-content: center;
+  }
 }
