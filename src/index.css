@@ -53,9 +53,6 @@ body {
   }
 }
 
-main {
-}
-
 .result {
   display: grid;
   gap: 1.5rem;
@@ -67,6 +64,8 @@ main {
     height: 512px;
     justify-self: center;
     border-radius: 32px;
+
+    box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
   }
 }
 
@@ -213,7 +212,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.03125rem;
   border-radius: 12px;
 
   &.red {
