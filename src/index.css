@@ -66,6 +66,7 @@ main {
     gap: 0;
     height: 512px;
     justify-self: center;
+    border-radius: 32px;
   }
 }
 
@@ -182,7 +183,7 @@ main {
   @media (min-width: 768px) {
     width: 348px;
     margin: 0;
-    padding-inline: 2rem;
+    padding-inline: 2.5rem;
 
     align-content: center;
     gap: 2rem;
