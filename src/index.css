@@ -46,9 +46,9 @@
 
 body {
   min-height: 100mvh;
-  background-color: var(--clr-blue-50);
 
   @media (min-width: 768px) {
+    background-color: var(--clr-blue-50);
     align-content: center;
   }
 }
@@ -60,6 +60,7 @@ main {
 .result {
   display: grid;
   gap: 1.5rem;
+  background-color: var(--clr-white);
 }
 
 .results-card {
@@ -103,4 +104,95 @@ main {
 
 .result-badge__score {
   color: var(--clr-white);
+}
+
+.summary {
+  width: 315px;
+  margin-inline: auto;
+
+  display: grid;
+  gap: 1.5rem;
+}
+
+.summary__header {
+  color: var(--clr-navy-950);
+}
+
+.summary__categories {
+  display: grid;
+  gap: 1rem;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+
+  &.red {
+    background-color: var(--clr-red-50);
+  }
+
+  &.yellow {
+    background-color: var(--clr-yellow-50);
+  }
+
+  &.green {
+    background-color: var(--clr-green-50);
+  }
+
+  &.blue {
+    background-color: var(--clr-blue-50);
+  }
+}
+
+.category__content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.category__icon {
+}
+
+.category__title {
+  .red & {
+    color: var(--clr-red-400);
+  }
+
+  .yellow & {
+    color: var(--clr-yellow-400);
+  }
+
+  .green & {
+    color: var(--clr-green-500);
+  }
+
+  .blue & {
+    color: var(--clr-blue-800);
+  }
+}
+
+.category__score {
+  color: hsl(from var(--clr-navy-950) h s l / 0.5);
+
+  & span {
+    color: var(--clr-navy-950);
+  }
+}
+
+button {
+  height: 3.5rem;
+  border-radius: 100vh;
+  color: var(--clr-white);
+  background-color: var(--clr-navy-950);
+  border: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: var(--clr-gradient-2);
+  }
 }
